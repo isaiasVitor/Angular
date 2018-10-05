@@ -18,7 +18,11 @@ export class SignosListagemComponent implements OnInit {
 
   }
 
-
+  listar() {
+    this.signoService.getAll().subscribe((dados: any) => {
+      this.signos = dados.data;
+    });
+  }
 
 
 
