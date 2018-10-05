@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="table table-dark table-hover table-striped ">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col" >Signo</th>
+          <th scope="col" >O que é o Signo</th>
+          <th scope="col" colspan="2" ><button type="button" class="btn btn-success">Novo</button></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of signos">
+          <td scope="row" >{{item.signo}}</td>
+          <td scope="row" class="text-justify text-monospace" >{{item.significado}}</td>
+          <td scope="row" ><button type="button" class="btn btn-warning">Editar</button></td>
+          <td scope="row" ><button type="button" class="btn btn-danger">Apagar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
